@@ -1,0 +1,11 @@
+<form>
+  <div class="form-group">
+    <label for="title">Post Title</label>
+    <input type="text" [(ngModel)]="newPost.title" name="title" id="title">
+  </div>
+  <div class="form-group">
+    <label for="body">Post Desc</label>
+    <input type="text" [(ngModel)]="newPost.body" name="body" id="body">
+  </div>
+  <button type="button" class="btn btn-primary" (click)="createNewPost()">Create New Post</button>
+</form>
